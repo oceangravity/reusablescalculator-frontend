@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/**
+    BEGIN CUSTOM CLASSES
+*/
+
+.ts-line-clamp-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.ts-loading-spinner {
+  border-top-color: transparent !important;
+  @apply border-solid rounded-full animate-spin;
+}
+
+.ts-category-item-root-normal {
+  @apply flex items-center flex-1 w-full font-medium text-[0.941rem] select-none cursor-pointer;
+}
+
+.ts-category-item-root-selected {
+  @apply flex items-center flex-1 w-full font-medium cursor-default text-[0.941rem] select-none;
+}
+
+.ts-category-item-normal {
+  @apply flex items-center flex-1 w-full min-w-full text-[14px] font-medium select-none cursor-pointer;
+}
+
+.ts-category-item-selected {
+  @apply flex items-center flex-1 w-full min-w-full font-medium cursor-default text-[0.941rem] select-none;
+}
+
+.ts-category-item-level-2-normal {
+  @apply flex items-center flex-1 w-full min-w-full text-[14px] select-none cursor-pointer;
+}
+
+.ts-category-item-level-2-selected {
+  @apply flex items-center flex-1 w-full min-w-full font-medium cursor-default text-[0.941rem] select-none;
+}
+
+
+.ts-category-item-level-3-normal {
+  @apply flex items-center flex-1 w-full min-w-full text-[13px] select-none cursor-pointer leading-[24px] font-extralight;
+}
+
+.ts-category-item-level-3-selected {
+  @apply flex items-center flex-1 w-full min-w-full text-[13px] font-[500] select-none cursor-pointer leading-[24px];
+}
+
+.ts-level-1-before {
+  @apply before:bottom-[-8px] before:w-full before:block before:absolute before:border-b;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/**
+    END CUSTOM CLASSES
+*/

@@ -1,0 +1,10 @@
+{
+	"especifications": "Especificaciones",
+	"product.extra_info.applications": "Aplicaciones",
+	"product.extra_info.designation": "Designación del artículo",
+	"product.extra_info.environmental_notes": "Especificaciones medioambientales",
+	"product.extra_info.model": "Modelo de artículo",
+	"product.extra_info.packaging": "Presentación de envase",
+	"product.extra_info.packaging_quantity": "Cantidad en envase",
+	"product.extra_info.packaging_unit": "Unidad de medida envase"
+}
