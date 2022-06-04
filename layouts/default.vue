@@ -1200,11 +1200,7 @@ const checkSteps = () => {
 
 onMounted(() => {
   if (process.client) {
-    if (!window.localStorage.getItem("token")) {
-      return router.push(`/auth/login`)
-    } else {
-      ready.value = true
-    }
+    ready.value = true
     window.requestAnimationFrame(checkSteps)
   }
   checkSteps()
